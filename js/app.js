@@ -19,6 +19,7 @@ function translateButtonHandler(event) {
         .then(json => {
             outputPlace.innerText = json.contents.translated;
         })
+        .catch(() => alert("Some Error has Occured!"));
 }
 
 function buildURL(inputData) {
